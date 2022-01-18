@@ -1,0 +1,157 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+    *zoom: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: wheat;
+    font-family: 'Smooch', cursive;
+    font-size: 15px;
+    line-height: 28px;
+    color: rgb(68, 67, 67);
+}
+
+.container {
+    width: 960px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+}
+
+.logo2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 150px;
+    top: 20px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(68, 67, 67);
+    font-weight: bold;
+}
+
+.slider {
+    height: 350px;
+    background-image: url(../img/jenal\ abidin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    width: 600px;
+    padding: 10px;
+    float: left;
+}
+
+.main h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.profil {
+    float: right;
+    width: 300px;
+}
+
+.profil h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profil img {
+    width: 100px;
+    height: 110px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 5px;
+}
+
+hr {
+    margin-bottom: 2px;
+}
+
+.documentasi {
+    width: 300px;
+    float: right;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.documentasi h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.documentasi img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
